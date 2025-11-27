@@ -1,0 +1,14 @@
+@import "tailwindcss";
+/* Sidebar slide (super smooth) */
+.slide-enter-active,
+.slide-leave-active {
+transition: transform .62s ease-in-out;
+}
+
+.slide-enter-from,
+.slide-leave-to {
+  transform: translateX(-100%);
+}
+body{
+  background-color: rgb(214, 214, 215);
+}
