@@ -16,21 +16,34 @@
     </div>
   </div>
 
-  <!--scroll list -->
-<div v-for="Section in ListSections" class="full items-center mt-6 flex justify-center bg-gray-300">
+<!-- Scroll List -->
+<div 
+  v-for="Section in ListSections" 
+  class="w-full mt-6 flex justify-center bg-gray-300 px-2"
+>
+  <div 
+    class="bg-white p-3 rounded shadow 
+           w-full max-w-6xl 
+           overflow-x-auto 
+           scrollbar-thin"
+  >
+    <h2 class="font-bold mb-3 text-base sm:text-lg">
+      {{ Section.title }}
+    </h2>
 
-  <div class="bg-white p-2 rounded shadow w-275 overflow-x-scroll" style=" scrollbar-width: thin; scrollbar-color: gray transparent;">
-    <h2 class="font-bold mb-3 text-lg ">{{ Section.title }}</h2>
-    <div class="flex items-center gap-4 w-max">
+    <div 
+      class="flex items-center gap-3 sm:gap-4 w-max"
+    >
       <img 
         v-for="item in Section.items"
         :key="item.id"
         :src="item.image"
-        class="object-contain rounded"
+        class="h-20 sm:h-28 md:h-32 object-contain rounded"
       />
     </div>
   </div>
-</div></div>
+</div>
+</div>
 </template>
 
 <script setup>
