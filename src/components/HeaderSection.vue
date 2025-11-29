@@ -29,6 +29,7 @@
 
         <input
           class="flex-1 h-9 sm:h-10 text-black indent-2 bg-white outline-none"
+          
           placeholder="Search Amazora" />
 
         <button class="bg-yellow-500 w-10 sm:w-14 h-9 sm:h-10 rounded-r-lg flex items-center justify-center hover:bg-yellow-600">
@@ -218,7 +219,7 @@
     </div>
 
     <button @click="mode=null"
-      class="text-white text-4xl absolute top-3 right-4">×</button>
+      class="text-white text-4xl absolute top-3 right-4 hover:cursor-pointer hover:text-white/90">×</button>
 
   </div>
 

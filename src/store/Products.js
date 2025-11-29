@@ -75,6 +75,57 @@ export const useProductStore = defineStore("products", {
         price: 14,
         image: "https://genietravel.com/cdn/shop/files/45DegreeAngle2_3731809d-b075-4bb8-a531-e8447b894615_1200x.jpg?v=1737027793",
       },
+      {
+        id:13,
+        ProductTitle:"Glasses for men's",
+        price:5,
+        image:"https://easysight.pk/wp-content/uploads/2025/09/APC_3131-Photoroom.jpg"
+      },
+      {
+        id:14,
+        ProductTitle:"Glasses Frame for men's",
+        price:3,
+        image:"https://vazeeropticalhall.com.pk/cdn/shop/files/1_e2aed455-980b-45d8-b0a2-f16db1c57df7_180x.webp?v=1753187403"
+      },{
+       id:15,
+        ProductTitle:"Glasses for female's",
+        price:6,
+        image:"https://m.media-amazon.com/images/I/71bdzJaGpHL._AC_SL1500_.jpg"
+      },
+      {
+       id:16,
+        ProductTitle:"Glasses for female's",
+        price:8,
+        image:"https://m.media-amazon.com/images/I/61DOUcFLBpL._AC_SL1500_.jpg"
+      }
+      ,
+      {
+       id:17,
+        ProductTitle:"Mobile back cover",
+        price:5,
+        image:"https://www.wecool.in/cdn/shop/products/1_a5abf881-a7f8-4b77-b9fb-50153ccffeb2.jpg?v=1650948678"
+      }
+      ,
+      {
+       id:18,
+        ProductTitle:"Customize name covers",
+        price:6,
+        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6Iw0InvppP9IBqxeAhvsKsKQnKqFTBrEN4g&s"
+      }
+      ,
+      {
+       id:19,
+        ProductTitle:"Cool mobile cover for female's",
+        price:8,
+        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIUBqx5LRf1Ds9Ow-p5K7trcq3UVWR7X5gEw&s"
+      }
+      ,
+      {
+       id:20,
+        ProductTitle:"Mobile cover for female's",
+        price:6,
+        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8PXMhEwieenVb0q-ZCZHrQANSDsRApOKwmQ&s"
+      }
     ],
  ListSections: [
   {
