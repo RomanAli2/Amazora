@@ -5,7 +5,7 @@
     <div class="flex items-center justify-between px-3 sm:px-6 py-3 gap-3">
 
       <!-- Logo -->
-      <div class="p-1 cursor-pointer flex-shrink-0">
+      <div class="p-1 cursor-pointer shrink-0 ">
         <img src="/images/flag.png" alt="logo" class="w-16 sm:w-24 object-contain" />
       </div>
 
@@ -56,7 +56,7 @@
       </div>
 
       <!-- Cart -->
-      <div @click="mode='cart'" class="hover:border border-white p-1 cursor-pointer flex items-center flex-shrink-0">
+      <div @click="mode='cart'" class="hover:border border-white p-1 cursor-pointer flex items-center shrink-0">
         <i class="fa-solid fa-cart-shopping text-xl"></i>
         <span class="hidden sm:block ml-1 text-sm">Cart</span>
       </div>
@@ -66,15 +66,15 @@
 
   <!-- MINI MENU -->
   <div class="text-xs md:text-sm flex bg-gray-300 h-9 items-center gap-3 border-b border-black overflow-x-auto whitespace-nowrap">
-    <button @click="mode='SidebarOpen'" class="ml-2 px-2 py-1 bg-gray-200 hover:bg-gray-300 rounded flex-shrink-0">
+    <button @click="mode='SidebarOpen'" class="ml-2 px-2 py-1 bg-gray-200 hover:bg-gray-300 rounded shrink-0">
       <i class="fa-solid fa-bars"></i> All
     </button>
 
-    <button @click="mode='aboutAmazora'" class="px-2 py-1 bg-gray-200 hover:bg-gray-300 rounded flex-shrink-0">
+    <button @click="mode='aboutAmazora'" class="px-2 py-1 bg-gray-200 hover:bg-gray-300 rounded shrink-0">
       About Amazora
     </button>
 
-    <span v-for="value in SmallBar" :key="value" class="flex-shrink-0 px-1">
+    <span v-for="value in SmallBar" :key="value" class="shrink-0 px-1">
       {{ value }}
     </span>
   </div>
