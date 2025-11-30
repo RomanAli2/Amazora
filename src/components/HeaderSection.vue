@@ -1,69 +1,71 @@
 <template>
 
   <!-- HEADER -->
-  <header class="bg-black text-white w-full">
-    <div class="flex items-center justify-between px-3 sm:px-6 py-3 gap-3">
+  <!-- HEADER -->
+<header class="bg-black text-white w-full">
+  <div class="flex flex-wrap items-center justify-between px-3 sm:px-6 py-3 gap-3">
 
-      <!-- Logo -->
-      <div class="p-1 cursor-pointer shrink-0 ">
-        <img src="/images/flag.png" alt="logo" class="w-16 sm:w-24 object-contain" />
-      </div>
-
-      <!-- Location -->
-      <div class="hidden md:block hover:border border-white p-1 cursor-pointer leading-tight">
-        <span class="text-xs text-gray-300">Delivering to Fargus Falls 52</span><br>
-        <strong class="text-sm">
-          <i class="fa-solid fa-location-dot text-yellow-400"></i>
-          Update location
-        </strong>
-      </div>
-
-      <!-- Search Bar -->
-      <div class="flex flex-1 max-w-xl w-full">
-        <select class="bg-gray-200 text-black px-2 text-xs sm:text-sm rounded-l-lg outline-none w-20 sm:w-28">
-          <option>All</option>
-          <option>Clothes</option>
-          <option>Shoes</option>
-          <option>Electronics</option>
-        </select>
-
-        <input
-          class="flex-1 h-9 sm:h-10 text-black indent-2 bg-white outline-none"
-          
-          placeholder="Search Amazora" />
-
-        <button class="bg-yellow-500 w-10 sm:w-14 h-9 sm:h-10 rounded-r-lg flex items-center justify-center hover:bg-yellow-600">
-          <i class="fa-solid fa-magnifying-glass text-black"></i>
-        </button>
-      </div>
-
-      <!-- Profile -->
-      <div v-if="userEmailvalue.length > 0"
-        @click="mode='profile'"
-        class="hidden lg:block hover:border border-white p-1 cursor-pointer leading-tight">
-        <span class="text-xs">{{ userEmailvalue }}</span>
-      </div>
-
-      <div v-else
-        @click="mode='signuppage'"
-        class="hidden lg:block hover:border border-white p-1 cursor-pointer leading-tight">
-        <span class="text-sm"><i class="fa-regular fa-user"></i> Login</span>
-      </div>
-
-      <!-- Orders -->
-      <div class="hidden lg:block hover:border border-white p-1 cursor-pointer leading-tight">
-        <span class="text-xs">Returns</span><br>
-        <strong class="text-sm">Orders</strong>
-      </div>
-
-      <!-- Cart -->
-      <div @click="mode='cart'" class="hover:border border-white p-1 cursor-pointer flex items-center shrink-0">
-        <i class="fa-solid fa-cart-shopping text-xl"></i>
-        <span class="hidden sm:block ml-1 text-sm">Cart</span>
-      </div>
-
+    <!-- Logo -->
+    <div class="p-1 cursor-pointer shrink-0">
+      <img src="/images/flag.png" alt="logo" class="w-16 sm:w-24 object-contain" />
     </div>
-  </header>
+
+    <!-- Location -->
+    <div class="hover:border border-white p-1 cursor-pointer leading-tight shrink-0">
+      <span class="text-xs text-gray-300">Delivering to Fargus Falls 52</span><br>
+      <strong class="text-sm">
+        <i class="fa-solid fa-location-dot text-yellow-400"></i>
+        Update location
+      </strong>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="flex flex-1 max-w-xl w-full order-last sm:order-none">
+      <select class="bg-gray-200 text-black px-2 text-xs sm:text-sm rounded-l-lg outline-none w-20 sm:w-28">
+        <option>All</option>
+        <option>Clothes</option>
+        <option>Shoes</option>
+        <option>Electronics</option>
+      </select>
+
+      <input
+        class="flex-1 h-9 sm:h-10 text-black indent-2 bg-white outline-none"
+        placeholder="Search Amazora"
+      />
+
+      <button class="bg-yellow-500 w-10 sm:w-14 h-9 sm:h-10 rounded-r-lg flex items-center justify-center hover:bg-yellow-600">
+        <i class="fa-solid fa-magnifying-glass text-black"></i>
+      </button>
+    </div>
+
+    <!-- Profile -->
+    <div v-if="userEmailvalue.length > 0"
+      @click="mode='profile'"
+      class="hover:border border-white p-1 cursor-pointer leading-tight shrink-0">
+      <span class="text-xs">{{ userEmailvalue }}</span>
+    </div>
+
+    <div v-else
+      @click="mode='signuppage'"
+      class="hover:border border-white p-1 cursor-pointer leading-tight shrink-0">
+      <span class="text-sm"><i class="fa-regular fa-user"></i> Login</span>
+    </div>
+
+    <!-- Orders -->
+    <div class="hover:border border-white p-1 cursor-pointer leading-tight shrink-0">
+      <span class="text-xs">Returns</span><br>
+      <strong class="text-sm">Orders</strong>
+    </div>
+
+    <!-- Cart -->
+    <div @click="mode='cart'" class="hover:border border-white p-1 cursor-pointer flex items-center shrink-0">
+      <i class="fa-solid fa-cart-shopping text-xl"></i>
+      <span class="ml-1 text-sm">Cart</span>
+    </div>
+
+  </div>
+</header>
+
 
   <!-- MINI MENU -->
   <div class="text-xs md:text-sm flex bg-gray-300 h-9 items-center gap-3 border-b border-black overflow-x-auto whitespace-nowrap">
