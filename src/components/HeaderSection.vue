@@ -20,7 +20,7 @@
     </div>
 
     <!-- Search Bar -->
-    <div class="flex flex-1 max-w-xl w-full order-last sm:order-none">
+    <div class="flex flex-1 max-w-xl w-full order-last sm:order-0">
       <select class="bg-gray-200 text-black px-2 text-xs sm:text-sm rounded-l-lg outline-none w-20 sm:w-28">
         <option>All</option>
         <option>Clothes</option>
