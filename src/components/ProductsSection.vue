@@ -3,7 +3,7 @@
   <div class="productCards grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-4 bg-gray-300 w-full">
     <div 
       class="product bg-white p-2 rounded text-center shadow" 
-      v-for="item in Product" 
+      v-for="item in filteredDeals" 
       :key="item.id"
     >
       <img :src="item.image" class="w-full h-40 object-contain" />
@@ -47,11 +47,24 @@
 </template>
 
 <script setup>
+  import { computed } from 'vue';
+  import { useProductStore } from "../store/Products";
+
+const store = useProductStore();
 const props = defineProps({
   Product: Array,
   ProductTitle: String,
  ListSections:Array
 
 })
+const filteredDeals = computed(() => {
+  if (!store.searchText) return store.Deals;
+
+  return store.Deals.filter(item =>
+    item.ProductTitle
+      .toLowerCase()
+      .includes(store.searchText.toLowerCase())
+  );
+});
 </script>
 

@@ -31,6 +31,7 @@
       <input
         class="flex-1 h-9 sm:h-10 text-black indent-2 bg-white outline-none"
         placeholder="Search Amazora"
+         v-model="store.searchText"
       />
 
       <button class="bg-yellow-500 w-10 sm:w-14 h-9 sm:h-10 rounded-r-lg flex items-center justify-center hover:bg-yellow-600">
@@ -231,7 +232,8 @@
 
 <script setup>
 import { ref } from "vue";
-
+import { useProductStore } from "../store/Products";
+const store = useProductStore();
 const mode = ref(null);
 const UserEmail = ref("");
 const UserPassword = ref("");

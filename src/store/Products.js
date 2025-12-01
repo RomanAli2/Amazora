@@ -2,6 +2,7 @@ import { defineStore } from "pinia";
 
 export const useProductStore = defineStore("products", {
   state: () => ({
+     searchText: "",
     Deals: [
       {
         id: 1,
@@ -29,7 +30,7 @@ export const useProductStore = defineStore("products", {
       },
        {
         id: 5,
-        ProductTitle: "Navy White Men Shirt",
+        ProductTitle: "White joger for men",
         price: 22,
         image: "https://www.xtep.com.pk/wp-content/uploads/2024/04/4cddf5bd-5553-46fc-aa95-9deb75760048.jpg",
       },
@@ -125,7 +126,128 @@ export const useProductStore = defineStore("products", {
         ProductTitle:"Mobile cover for female's",
         price:6,
         image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8PXMhEwieenVb0q-ZCZHrQANSDsRApOKwmQ&s"
-      }
+      },
+      {
+  id: 21,
+  ProductTitle: "Bluetooth Wireless Earbuds",
+  price: 18,
+  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQb2ekB_2j017U6GF0gRMJWzDHNsbL07VmAw&s"
+},
+{
+  id: 22,
+  ProductTitle: "Smart Fitness Watch",
+  price: 22,
+  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREWkX95rPyR8XkQqlqWNo5BNDVG98DvyPYbA&s"
+},
+{
+  id: 23,
+  ProductTitle: "Leather Wallet for Men",
+  price: 10,
+  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_2udLnq2xecjf0kf7QlqErsx5JWIZqYex5g&s"
+},
+{
+  id: 24,
+  ProductTitle: "Stylish Sunglasses",
+  price: 8,
+  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNblq720R3ryIdgLCLXAza-vfmUHCzfSUWOw&s"
+},
+{
+  id: 25,
+  ProductTitle: "School Backpack Bag",
+  price: 20,
+  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2zsRwe85JLDB1-AcYHa3rNHyFD1Zk5mdUsw&s"
+},
+{
+  id: 26,
+  ProductTitle: "Cotton Casual Cap",
+  price: 5,
+  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDHLRX_14b2W80AMyekK_VwWmgV4br39VPgA&s"
+},
+{
+  id: 27,
+  ProductTitle: "Laptop Sleeve Cover",
+  price: 12,
+  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz6CujBsg6Pxk4-pmSNwv8hsNjKUjE2qe3UA&s"
+},
+{
+  id: 28,
+  ProductTitle: "USB Fast Charging Cable",
+  price: 4,
+  image: "https://m.media-amazon.com/images/I/61whFcpC1nL._AC_SL1391_.jpg"
+},
+{
+  id: 29,
+  ProductTitle: "Mini Bluetooth Speaker",
+  price: 15,
+  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7_aVWR_SxQy7SPPLXFkJEaWTD_35nC_PtEg&s"
+},
+{
+  id: 30,
+  ProductTitle: "Gaming Mouse RGB",
+  price: 14,
+  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBbV0dh8uG6Mag0HrsdajjEo6hEq8mjUYf2w&s"
+},
+{
+  id: 31,
+  ProductTitle: "Notebook Diary Premium",
+  price: 6,
+  image: "https://m.media-amazon.com/images/I/61FCFUvG97L.jpg"
+},
+{
+  id: 32,
+  ProductTitle: "Kids Water Bottle",
+  price: 5,
+  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY0V_ERUtFdXU3QtbIcHL2xtyEZqaz4kaGfg&s"
+},
+{
+  id: 33,
+  ProductTitle: "LED Table Study Lamp",
+  price: 11,
+  image: "https://wbm.com.pk/public/uploads/all/lNK8PhWVr15t1F4AQ4fmTdaB5m7Sw8UFOcmFJvN3.jpg"
+},
+{
+  id: 34,
+  ProductTitle: "Wall Clock Modern Design",
+  price: 13,
+  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDMvh-65wn9Hk6OzkYrkFtANetDdrTXjZqaQ&s"
+},
+{
+  id: 35,
+  ProductTitle: "Travel Organizer Pouch",
+  price: 7,
+  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFh5l9Qx2iuS2KGEG6VkE_HXEY4OqlnoHiJw&s"
+},
+{
+  id: 36,
+  ProductTitle: "Wireless Keyboard",
+  price: 16,
+  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeFwjaU7TLxQeq8gj1QsGH2pblUXQkGd5TLQ&s"
+},
+{
+  id: 37,
+  ProductTitle: "Phone Stand Adjustable",
+  price: 4,
+  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbgA_YzeqG4bRNjGTTkZxrbyd6aLxwXf7mSw&s"
+},
+{
+  id: 38,
+  ProductTitle: "Portable Power Bank",
+  price: 19,
+  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1EfJDwHhBryk_YJg3Y-nk1Lnum3Bi8_Uk8Q&s"
+},
+{
+  id: 39,
+  ProductTitle: "Car Phone Holder",
+  price: 6,
+  image: "https://autojin.pk/cdn/shop/files/1_0c56b49f-8eb3-4cc8-ba65-bbf55570c2d1.jpg?v=1764415325"
+},
+{
+  id: 40,
+  ProductTitle: "Desk Organizer Box",
+  price: 9,
+  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHbe-AMrMIsCclmkqLuePZCkLcCU7VTmiiog&s"
+}
+
     ],
  ListSections: [
   {
@@ -157,7 +279,7 @@ export const useProductStore = defineStore("products", {
      
     ]
   }
-]
-
+],
   }),
+  
 });
